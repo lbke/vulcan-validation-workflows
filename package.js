@@ -1,5 +1,5 @@
 Package.describe({
-  name: "validation-workflow"
+  name: "vulcan:validation-workflows"
 });
 
 Package.onUse(api => {
