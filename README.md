@@ -32,6 +32,7 @@ We seek for maximum reusability, so each method should be as configurable as pos
 
 Possible improvements:
 
+- Add a filter at the database level on the `_valid` field for users that are not in the moderator group. This way the `totalCount` computation would be correct.
 - Add a `_refused` state to the current workflow (right now user can't know if its document has been refused)
 - Add more complex workflows (validation by a specific assigned user, multiple validations, remember who validated what, etc.)
 - Handle drafts (would need to deactivate mandatory data validation, e.g if the title is needed but the document is only a draft, do not trigger errors if the title is not set yet)
