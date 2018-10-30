@@ -6,6 +6,16 @@ This package helps to manage document validation workflows in [Vulcan.js](http:/
 
 **/!\ This is an experimental package, API will certainly evolve in the months to come**.
 
+## Current workflows
+
+### Validation
+
+Create a `_valid` field editable only by administrators, and provide related `checkAccess` method and views for filtered display.
+
+### Limitation
+
+Limit the number of documents an user can create.
+
 ## Installation
 
 Clone this repo:
@@ -19,7 +29,7 @@ You can clone it directly in your app `packages` folder. You can also clone it i
 Then use the package in your app:
 
 ```js
-import { theFunctionYouNeed } from "vulcan:validation-workflows"
+import { theFunctionYouNeed } from "vulcan:validation-workflows";
 ```
 
 This package won't be published on Atmosphere or npm until it is a bit more mature.
@@ -37,5 +47,4 @@ Possible improvements:
 - Add more complex workflows (validation by a specific assigned user, multiple validations, remember who validated what, etc.)
 - Handle drafts (would need to deactivate mandatory data validation, e.g if the title is needed but the document is only a draft, do not trigger errors if the title is not set yet)
 
-*[Built with love by LBKE](https://github.com/lbke)*
-
+_[Built with love by LBKE](https://github.com/lbke)_
